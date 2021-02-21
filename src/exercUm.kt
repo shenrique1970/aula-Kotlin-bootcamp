@@ -3,7 +3,7 @@ fun main(args: Array<String>) {
     var num2 = (1..10).random() //Não divide por 0
     var oper = (1..4).random()
 
-    //if
+
 
     println("Primeiro numero: $num1")
     println("Segundo numero: $num2")
