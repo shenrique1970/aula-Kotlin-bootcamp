@@ -1,18 +1,21 @@
-import java.util.*
+fun main(args: Array<String>) {
+    for (i in 2..100) {
 
-fun main() {
-
-    var mais = 1
-    val num = 50
-    for (j in num..100 ) {
-
-        if (num % j == 0 && num/num == 1) {
-            println("prime")
-
-        } else {
-            println("not prime")
+        if (ePrimo(i) == true) {
+            println(" $i - prime")
+        }else {
+            println("$i - not prime")
         }
-
-
     }
+}
+
+fun ePrimo(num: Int): Boolean {
+
+    for (i in 2..num / 2) {
+        if (num % i == 0) {
+            return false
+
+        }
+    }
+    return true
 }
